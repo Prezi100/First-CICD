@@ -1,0 +1,22 @@
+name: My First Basic Deployment
+
+on: push
+
+jobs:
+    Deployment Procedure:
+    runs-on: ubuntu:latest
+
+
+    steps:
+      - name: Checkout Action
+        uses: action/checkout@v4
+
+      - name: List out all File In Directory
+        run: ls
+
+      - name: View Content in README File
+       run: cat README.md
+
+
+
+
